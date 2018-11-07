@@ -11,6 +11,35 @@ import UIKit
 private let reuseIdentifier = "ArtIdentifier"
 
 public class ArtCollectionViewCollectionViewController: UICollectionViewController {
+    
+    private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+    private let itemsPerRowCompact : CGFloat = 4
+    private let itemsPerRowNormal : CGFloat = 6
+    
+    private let creativeCS : [UIImage?] = {
+        return [
+            UIImage(named: "octocat"),
+            UIImage(named: "Haiku1"),
+            UIImage(named: "Haiku2"),
+            UIImage(named: "Haiku3"),
+            UIImage(named: "Mountain"),
+            UIImage(named: "Picasso")
+            
+            
+        ]
+    }()
+    private let labels : [String] =
+    {
+        return [
+            "Octocat",
+            "Haiku",
+            "Haiku",
+            "Haiku",
+            "Mountain",
+            "Picasso"
+        
+        ]
+    }()
 
     public override func viewDidLoad() -> Void {
         super.viewDidLoad()
