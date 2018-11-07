@@ -67,23 +67,23 @@ public class ArtCollectionViewCollectionViewController: UICollectionViewControll
 
     public override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
-
-
     public override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return creativeCS.count
     }
-
     public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
         // Configure the cell
-    
         return cell
     }
-
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeforItemAt indexPath: IndexPath) -> CGSize {
+        let paddingSpace = sectionInsets.left * (itemsPerRowCompact + 1)
+        let availiableWidth = view.frame.width - paddingSpace
+        let widthPerItem = availiableWidth / itemsPerRowCompact
+        return CGSize(width: widthPerItem, height: widthPerItem)
+    }
     // MARK: UICollectionViewDelegate
 
     /*

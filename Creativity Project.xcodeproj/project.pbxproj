@@ -14,6 +14,7 @@
 		6C3F7870218B3CFD003C727C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3F786F218B3CFD003C727C /* Assets.xcassets */; };
 		6C3F7873218B3CFD003C727C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3F7871218B3CFD003C727C /* LaunchScreen.storyboard */; };
 		6CE4A1AA2193384A00CE1336 /* ArtCollectionViewCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE4A1A92193384A00CE1336 /* ArtCollectionViewCollectionViewController.swift */; };
+		6CE4A1AC21934AF300CE1336 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE4A1AB21934AF300CE1336 /* ArtCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6C3F7872218B3CFD003C727C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C3F7874218B3CFD003C727C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CE4A1A92193384A00CE1336 /* ArtCollectionViewCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollectionViewCollectionViewController.swift; sourceTree = "<group>"; };
+		6CE4A1AB21934AF300CE1336 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				6C3F786C218B3CF9003C727C /* Main.storyboard */,
 				6C3F7871218B3CFD003C727C /* LaunchScreen.storyboard */,
 				6C2FE1E4218B4AE8007EA170 /* DrawingView.swift */,
+				6CE4A1AB21934AF300CE1336 /* ArtCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				6C2FE1E5218B4AE8007EA170 /* DrawingView.swift in Sources */,
 				6C3F786B218B3CF9003C727C /* CreativityViewController.swift in Sources */,
+				6CE4A1AC21934AF300CE1336 /* ArtCell.swift in Sources */,
 				6C3F7869218B3CF9003C727C /* AppDelegate.swift in Sources */,
 				6CE4A1AA2193384A00CE1336 /* ArtCollectionViewCollectionViewController.swift in Sources */,
 			);
