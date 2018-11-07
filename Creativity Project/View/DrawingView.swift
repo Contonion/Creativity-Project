@@ -13,6 +13,7 @@ public class DrawingView: UIView {
         //Drawing Code
         createStickFigure().stroke()
         drawTurtle().stroke()
+        drawFace().stroke()
     }
     
     private func createStickFigure() -> UIBezierPath {
@@ -44,8 +45,8 @@ public class DrawingView: UIView {
         let face = UIBezierPath()
         UIColor.white.setStroke()
         face.lineWidth = 3.0
-        face.addArc(withCenter: CGPoint(x: 150, y: 150), radius: CGFloat(25), startAngle: CGFloat(0), endAngle: CGFloat(2) * CGFloat.pi, clockwise: true)
-        face.move(to: CGPoint(x: 150, y: 150))
+        face.addArc(withCenter: CGPoint(x: 100, y: 100), radius: CGFloat(50), startAngle: CGFloat(0), endAngle: CGFloat(2) * CGFloat.pi, clockwise: true)
+        face.move(to: CGPoint(x: 100, y: 100))
         return face
     }
 }
