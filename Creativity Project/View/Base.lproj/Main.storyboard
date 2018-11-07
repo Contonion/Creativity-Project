@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change Screen"/>
                                 <connections>
-                                    <segue destination="Ce8-go-UnX" kind="show" id="Jv5-uH-zRA"/>
+                                    <segue destination="zGM-ya-AyM" kind="show" id="905-R2-lHh"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4aV-n8-mdK" customClass="DrawingView" customModule="Creativity_Project" customModuleProvider="target">
@@ -40,20 +40,39 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Baq-Sb-1XF">
+        <!--Collection View Controller-->
+        <scene sceneID="KfI-7s-3oF">
             <objects>
-                <viewController id="Ce8-go-UnX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ug7-w1-GBd">
+                <collectionViewController id="zGM-ya-AyM" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="6g1-0N-PJD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="xpY-tP-fnI"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nTQ-Id-ZdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" red="1" green="0.27053917768593672" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8qL-b8-wZn">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArtIdentifier" id="DQk-Rb-cKg">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="zGM-ya-AyM" id="m5J-1M-gyS"/>
+                            <outlet property="delegate" destination="zGM-ya-AyM" id="8DK-JK-cHu"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Axj-aE-d0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905" y="114"/>
+            <point key="canvasLocation" x="896" y="127"/>
         </scene>
     </scenes>
 </document>
