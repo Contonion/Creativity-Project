@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
-        <!--Art Ce-->
+        <!--Art Collection View Collection View Controller-->
         <scene sceneID="KfI-7s-3oF">
             <objects>
-                <collectionViewController id="zGM-ya-AyM" customClass="ArtCe" sceneMemberID="viewController">
+                <collectionViewController id="zGM-ya-AyM" customClass="ArtCollectionViewCollectionViewController" customModule="Creativity_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="6g1-0N-PJD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,18 +56,18 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArtIdentifier" id="DQk-Rb-cKg">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArtIdentifier" id="DQk-Rb-cKg" customClass="ArtCell" customModule="Creativity_Project" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="0.0" width="250" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yNr-Ay-62h">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yNr-Ay-62h" userLabel="Art Image">
                                             <rect key="frame" x="5" y="6" width="240" height="237"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5b-ln-hPj">
-                                            <rect key="frame" x="104" y="115" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5b-ln-hPj" userLabel="Art Label">
+                                            <rect key="frame" x="104.5" y="115" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -83,6 +83,10 @@
                                     <constraint firstItem="yNr-Ay-62h" firstAttribute="leading" secondItem="DQk-Rb-cKg" secondAttribute="leadingMargin" constant="-11" id="xyB-C2-BYj"/>
                                 </constraints>
                                 <size key="customSize" width="250" height="250"/>
+                                <connections>
+                                    <outlet property="artImage" destination="yNr-Ay-62h" id="EBv-xQ-Vj7"/>
+                                    <outlet property="artLabel" destination="K5b-ln-hPj" id="Yz6-zr-yOR"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
