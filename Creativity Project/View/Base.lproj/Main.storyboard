@@ -66,8 +66,8 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yNr-Ay-62h" userLabel="Art Image">
                                             <rect key="frame" x="5" y="6" width="240" height="237"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5b-ln-hPj" userLabel="Art Label">
-                                            <rect key="frame" x="104.5" y="115" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5b-ln-hPj" userLabel="Art Label">
+                                            <rect key="frame" x="104" y="115" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -77,6 +77,7 @@
                                 <color key="backgroundColor" red="1" green="0.55544585128859825" blue="0.97088045917438159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="yNr-Ay-62h" firstAttribute="top" secondItem="DQk-Rb-cKg" secondAttribute="topMargin" constant="-14" id="6FY-98-nRm"/>
+                                    <constraint firstItem="K5b-ln-hPj" firstAttribute="centerY" secondItem="DQk-Rb-cKg" secondAttribute="centerY" id="NdZ-6C-Frx"/>
                                     <constraint firstItem="yNr-Ay-62h" firstAttribute="centerX" secondItem="K5b-ln-hPj" secondAttribute="centerX" id="XHR-Ky-mdl"/>
                                     <constraint firstItem="yNr-Ay-62h" firstAttribute="centerY" secondItem="DQk-Rb-cKg" secondAttribute="centerY" id="YRo-08-kme"/>
                                     <constraint firstItem="yNr-Ay-62h" firstAttribute="centerX" secondItem="DQk-Rb-cKg" secondAttribute="centerX" id="euQ-ef-q2g"/>
